@@ -19,7 +19,7 @@ const Signup = () => {
 
     const handleSubmit = async(e)=>{
         e.preventDefault()
-        const resp = await axios.post('http://localhost:5000/api/register',data)
+        const resp = await axios.post('https://crudrender-og2v.onrender.com/api/register',data)
         alert(resp.data.message)
         console.log(resp);
         
